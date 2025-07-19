@@ -1,0 +1,206 @@
+/* .primary-400 {
+    color: #57A203;
+}
+
+.primary-100 {
+    color: #F5FEE7;
+}
+
+.neutarl {
+    color: #F8F9FA;
+}
+
+.neutarl-white {
+    color: #FFFFFF;
+} */
+
+/* 變數方式帶入 */
+:root {
+    --primary-400: #57A203;
+    --primary-100: #F5FEE7;
+    --neutral-white: #FFFFFF;
+    --neutral-100: #F8F9FA;
+    --neutral-300: #DEE2E6;
+    --neutral-600: #6C757D;
+    --neutral-900: #212529;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: var(--neutral-900);
+}
+
+.header {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true');
+    height: 400PX;
+    background-size: cover; /* 圖片會填滿容器 */
+    background-position: center; /* 圖片會置中對齊 */
+    background-repeat: no-repeat; /* 不要重複平鋪 */
+    color: var(--neutral-white);
+    line-height: 1.2;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 151px;
+}
+
+.header p {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+a {
+    color: var(--primary-400);
+    display: block;
+    text-underline-offset: 4px;
+    line-height: 1.5;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.mb-64 {
+    margin-bottom: 64px;
+}
+
+.p-32 {
+    padding: 32px;
+}
+
+.pr-8{
+    padding-right: 8px;
+}
+
+.pl-12{
+    padding-left: 12px;
+}
+
+.pl-24 {
+    padding-left: 24px;
+}
+
+.py-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.py-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.block-quote {
+    background-color: var(--primary-100);
+}
+
+.block-quote h3 {
+    color: var(--primary-400);
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: bold;
+}
+
+.block-quote p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 856px;
+}
+
+.container h3 {
+    color: var(--primary-400);
+    font-size: 20px;
+    line-height: 1.2; 
+    font-weight: bold;
+}
+
+.container .block-quote h3 {
+    color: var(--primary-400);
+    font-size: 20px;
+    line-height: 1.2; 
+    font-weight: bold;
+}
+
+.container h2{
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.container img {
+    margin-left: -110px;
+    margin-right: -110px;
+    max-width: 1076px;
+    height: auto;
+}
+
+.container p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.underline-border {
+  border-bottom: 1px solid var(--neutral-300);
+}
+
+.history-item{
+    border-left: 1px solid var(--neutral-900);
+    padding-left: 8px;
+}
+
+.history-list {
+    list-style-type: disc;
+}
+
+.history-list li {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.idea-list li {
+    border-left: 3px solid var(--neutral-300);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.bi{
+    vertical-align: bottom; /* 底部對齊 */
+}
+
+footer {
+    background-color: var(--neutral-100);
+    color: var(--neutral-600);
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}

@@ -16,23 +16,32 @@
     --danger: #D74F4F
 }
 
-*,*::before,*::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 img {
-    vertical-align: middle; /*圖片下方清除空白間隙*/
+    vertical-align: middle;
+    /*圖片下方清除空白間隙*/
+    max-width: 100%;
+    height: auto;
 }
 
 /* .container {
     width: 856px;
     margin: 0 auto;
 } */
- .container {
-    max-width: 880px; /*856+12+12*/
+.container {
+    max-width: 1320px;
+    /*1296px + 12px + 12px = 1320px*/
     margin: 0 auto;
-    padding: 0 12px; /*行動版左右要留白12px*/
+    /* padding: 0 12px; 行動版左右要留白12px */
+    padding-left: 12px;
+    padding-right: 12px;
 }
+
 
 .d-block {
     display: block;
@@ -50,6 +59,7 @@ img {
     .d-md-block {
         display: block;
     }
+
     .d-md-none {
         display: none;
     }
@@ -59,6 +69,7 @@ img {
     .d-sm-block {
         display: block;
     }
+
     .d-sm-none {
         display: none;
     }
@@ -118,32 +129,38 @@ img {
     font-weight: 400;
 }
 
-@media(max-whidth:767px) {
-    .h3-md{
+@media(max-width:767px) {
+    .h3-md {
         font-size: 28px;
     }
-    .h4-md{
+
+    .h4-md {
         font-size: 24px;
     }
-    .h5-md{
+
+    .h5-md {
         font-size: 20px;
     }
-    .h6-md{
+
+    .h6-md {
         font-size: 16px;
     }
 }
 
-@media(max-whidth:576px) {
-    .h3-sm{
+@media(max-width:576px) {
+    .h3-sm {
         font-size: 28px;
     }
-    .h4-sm{
+
+    .h4-sm {
         font-size: 24px;
     }
-    .h5-sm{
+
+    .h5-sm {
         font-size: 20px;
     }
-    .h6-sm{
+
+    .h6-sm {
         font-size: 16px;
     }
 }
@@ -224,24 +241,38 @@ img {
     padding-bottom: 64px;
 }
 
-@media(max-width:767px){
-    .py-md-32 {
-        padding: 32px 0;
+@media(max-width:767px) {
+    .p-md-24 {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
+
+    .py-md-32 {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
     .pb-md-32 {
         padding-bottom: 32px;
     }
 }
 
-@media(max-width:576px){
+@media(max-width:576px) {
     .px-sm-12 {
-        padding: 0 12px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
+
     .py-sm-12 {
-        padding: 12px 0;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
+
     .py-sm-32 {
-        padding: 32px 0;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 
@@ -289,26 +320,130 @@ img {
     margin-bottom: 64px;
 }
 
-@media(max-width:767px){
+@media(max-width:767px) {
+    .mb-md-12 {
+        margin-bottom: 12px;
+    }
+
     .mb-md-16 {
         margin-bottom: 16px;
     }
+
     .mb-md-24 {
         margin-bottom: 24px;
     }
+
     .mb-md-32 {
         margin-bottom: 32px;
     }
 }
 
-@media(max-width:576px){
+@media(max-width:576px) {
     .mb-sm-4 {
         margin-bottom: 4px;
     }
+
     .mb-sm-8 {
         margin-bottom: 8px;
     }
+
+    .me-sm-0 {
+        margin-right: 0px;
+    }
+
     .me-sm-16 {
         margin-right: 16px;
+    }
+}
+
+.col-1 {
+    /* list跟鞋子圖片的間隔是24, 所以要用左右panding各12 */
+    padding-left: 12;
+    padding-right: 12;
+    /* 總寬除以12欄 */
+    width: calc(100%/12);
+}
+
+.col-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12 * 2);
+    /*兩欄寬度*/
+}
+
+.col-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12 * 3);
+    /*3欄寬度*/
+}
+
+.col-4 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12 * 4);
+    /*4欄寬度*/
+}
+
+.col-5 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12 * 5);
+    /*5欄寬度*/
+}
+
+.col-7 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12 * 7);
+    /*7欄寬度*/
+}
+
+.col-8 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100%/12 * 8);
+}
+
+.col-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12 * 10);
+    /*10欄寬度*/
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /*自動換行*/
+    /*.col有用到左右panding各12px , 避免在外邊兩側出現12px間距所以要用margin扣回來*/
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+@media(max-width:767px) {
+    .row {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+    .col-md-1 {
+        padding-left: 6px;
+        padding-right: 6px;
+        width: calc(100%/4);
+    }
+    .col-md-2 {
+        padding-left: 6px;
+        padding-right: 6px;
+        width: calc(100%/4 *2);
+    }
+    .col-md-3 {
+        padding-left: 6px;
+        padding-right: 6px;
+        width: calc(100%/4 *3);
+    }
+    .col-md-4 {
+        padding-left: 6px;
+        padding-right: 6px;
+        width: 100%;
     }
 }

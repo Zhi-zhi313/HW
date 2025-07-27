@@ -42,16 +42,47 @@ body {
     text-align: center; /*文字置中*/
 }
 
+@media(max-width:767px) {
+    .header {
+        padding-top: 87px;
+        padding-bottom: 87px;
+        background-image: url(/Week3/image/hero-sm.png);
+    }
+    .h3 {
+        font-size: 20px;
+    }
+}
+
 .quote {
     border-radius: 12px; /*外框圓角(半徑12px)*/
     text-align: center; /*文字置中對齊*/
 }
 
-.intro img {
-    margin-right: -110px;
-    margin-left: -110px;
-    width: 1076px;
+@media(max-width:767px) {
+    .quote {
+        text-align:left;
+    }
 }
+
+.intro img {
+  width: 100%;          /* 圖片寬度會等於欄寬 */
+  height: auto;          /* 等比例縮放 */
+  display: block;        /* 清除底部空隙 */
+  max-width: 100%;       /* 防止圖片過大溢出 */
+}
+
+/* 
+@media (max-width: 576px) {
+  .intro img {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+} */
+
 
 .section-lined {
     border-bottom: 1px solid var(--neutral-300);
@@ -93,9 +124,15 @@ body {
  color: var(--neutral-white);  
 }
 
+@media(max-width:576px) {
+    .btn-register{
+         padding: 8px 16px;
+    }
+}
+
 .footer {
     background-color: var(--neutral-100);
-    text-align: center;
+    /* text-align: center; */
 }
 
 .footer p {

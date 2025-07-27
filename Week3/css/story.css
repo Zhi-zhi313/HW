@@ -34,7 +34,11 @@ body {
 }
 
 .header {
+<<<<<<< HEAD
     background-image: url(../image/hero.png);
+=======
+    background-image: url(./image/hero.png);
+>>>>>>> 499cd13d1f35ce8e5a04ae36148a59176154fd72
     background-repeat: no-repeat; /*背景圖不重複*/
     background-size: cover; /*背景圖填滿整個區塊*/
     background-position: center; /*背景圖位置置中*/
@@ -46,7 +50,11 @@ body {
     .header {
         padding-top: 87px;
         padding-bottom: 87px;
+<<<<<<< HEAD
         background-image: url(../image/hero-sm.png);
+=======
+        background-image: url(./image/hero-sm.png);
+>>>>>>> 499cd13d1f35ce8e5a04ae36148a59176154fd72
     }
     .h3 {
         font-size: 20px;

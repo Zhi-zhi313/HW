@@ -34,7 +34,7 @@ body {
 }
 
 .header {
-    background-image: url(/Week3/image/hero.png);
+    background-image: url(./image/hero.png);
     background-repeat: no-repeat; /*背景圖不重複*/
     background-size: cover; /*背景圖填滿整個區塊*/
     background-position: center; /*背景圖位置置中*/
@@ -46,7 +46,7 @@ body {
     .header {
         padding-top: 87px;
         padding-bottom: 87px;
-        background-image: url(/Week3/image/hero-sm.png);
+        background-image: url(./image/hero-sm.png);
     }
     .h3 {
         font-size: 20px;

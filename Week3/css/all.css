@@ -1,0 +1,314 @@
+/* 引入字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+:root {
+    --primary-200: #E8FEC5;
+    --primary-300: #C0FA73;
+    --primary-400: #57A203;
+    --primary-100: #F5FEE7;
+    --neutral: #F8F9FA;
+    --neutral-white: #FFFFFF;
+    --neutral-100: #F8F9FA;
+    --neutral-300: #DEE2E6;
+    --neutral-500: #ADB5BD;
+    --neutral-600: #6C757D;
+    --neutral-900: #212529;
+    --danger: #D74F4F
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle; /*圖片下方清除空白間隙*/
+}
+
+/* .container {
+    width: 856px;
+    margin: 0 auto;
+} */
+ .container {
+    max-width: 880px; /*856+12+12*/
+    margin: 0 auto;
+    padding: 0 12px; /*行動版左右要留白12px*/
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+@media(max-width:767px) {
+    .d-md-block {
+        display: block;
+    }
+    .d-md-none {
+        display: none;
+    }
+}
+
+@media(max-width:576px) {
+    .d-sm-block {
+        display: block;
+    }
+    .d-sm-none {
+        display: none;
+    }
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+
+}
+
+.h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h3 {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h4 {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h5 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h6 {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.text-sm {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media(max-whidth:767px) {
+    .h3-md{
+        font-size: 28px;
+    }
+    .h4-md{
+        font-size: 24px;
+    }
+    .h5-md{
+        font-size: 20px;
+    }
+    .h6-md{
+        font-size: 16px;
+    }
+}
+
+@media(max-whidth:576px) {
+    .h3-sm{
+        font-size: 28px;
+    }
+    .h4-sm{
+        font-size: 24px;
+    }
+    .h5-sm{
+        font-size: 20px;
+    }
+    .h6-sm{
+        font-size: 16px;
+    }
+}
+
+.text-neutral-white {
+    color: var(--neutral-white);
+}
+
+.text-neutral-600 {
+    color: var(--neutral-600);
+}
+
+.text-primary-400 {
+    color: var(--primary-400);
+}
+
+.bg-primary-100 {
+    background-color: var(--primary-100);
+}
+
+.bg-primary-200 {
+    background-color: var(--primary-200);
+}
+
+.p-32 {
+    padding: 32px;
+}
+
+.pt-32 {
+    padding-top: 32px;
+}
+
+.pe-8 {
+    padding-right: 8px;
+}
+
+.pb-48 {
+    padding-bottom: 48px;
+}
+
+.py-4 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.py-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.py-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.py-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.py-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.py-48 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.py-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+@media(max-width:767px){
+    .py-md-32 {
+        padding: 32px 0;
+    }
+    .pb-md-32 {
+        padding-bottom: 32px;
+    }
+}
+
+@media(max-width:576px){
+    .px-sm-12 {
+        padding: 0 12px;
+    }
+    .py-sm-12 {
+        padding: 12px 0;
+    }
+    .py-sm-32 {
+        padding: 32px 0;
+    }
+}
+
+.me-24 {
+    margin-right: 24px;
+}
+
+.me-40 {
+    margin-right: 40px;
+}
+
+.me-48 {
+    margin-right: 48px;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.mb-64 {
+    margin-bottom: 64px;
+}
+
+@media(max-width:767px){
+    .mb-md-16 {
+        margin-bottom: 16px;
+    }
+    .mb-md-24 {
+        margin-bottom: 24px;
+    }
+    .mb-md-32 {
+        margin-bottom: 32px;
+    }
+}
+
+@media(max-width:576px){
+    .mb-sm-4 {
+        margin-bottom: 4px;
+    }
+    .mb-sm-8 {
+        margin-bottom: 8px;
+    }
+    .me-sm-16 {
+        margin-right: 16px;
+    }
+}

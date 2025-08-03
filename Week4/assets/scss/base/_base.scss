@@ -237,14 +237,14 @@ a {
     font-weight: 500;
 }
 
-.btn-register {
- background-color: var(--neutral-900); 
- padding: 12px 24px; /*上下12 左右24*/
- color: var(--neutral-white);  
-}
-
 .border-bottom {
     border-bottom: 1px solid var(--neutral-300);
+}
+
+/* 深色 */
+.btn-dark {
+ background-color: var(--neutral-900); 
+ color: var(--neutral-white);  
 }
 
 .p-12 {
